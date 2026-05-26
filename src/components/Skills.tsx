@@ -2,7 +2,7 @@ import { getSkills } from "@/lib/api";
 
 export default async function Skills() {
   const skills = await getSkills();
-  
+
   // Group skills by category
   const categories = Array.from(new Set(skills.map(s => s.category)));
 
@@ -13,23 +13,23 @@ export default async function Skills() {
         {categories.map(category => (
           <div key={category}>
             <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">{category}</h3>
-            <div className="flex flex-wrap gap-x-6 gap-y-3">
+            <ul className="flex flex-wrap gap-x-6 gap-y-3">
               {skills
                 .filter(s => s.category === category)
                 .sort((a, b) => b.level - a.level)
                 .map(skill => (
-                  <div key={skill.id} className="flex flex-col">
+                  <li key={skill.id} className="flex flex-col">
                     <span className="text-lg font-medium">{skill.name}</span>
-                    <div className="w-24 h-0.5 bg-zinc-100 mt-1 relative overflow-hidden">
-                      <div 
-                        className="absolute inset-y-0 left-0 bg-foreground transition-all duration-1000 ease-out" 
+                    <div className="w-24 h-0.5 bg-zinc-100 mt-1 relative overflow-hidden" aria-hidden="true">
+                      <div
+                        className="absolute inset-y-0 left-0 bg-foreground transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
-                  </div>
+                  </li>
                 ))
               }
-            </div>
+            </ul>
           </div>
         ))}
       </div>

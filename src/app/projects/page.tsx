@@ -40,7 +40,7 @@ export default async function ProjectsPage() {
             <div className="w-full sm:w-1/3 aspect-video bg-zinc-100 rounded-xl overflow-hidden border shrink-0">
               {project.image_url ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={project.image_url} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={project.image_url} alt={`${project.title} - Custom AI Automation and Web Development by Alastier C.`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-zinc-400 bg-zinc-50 transition-colors duration-500 group-hover:bg-zinc-100">
                   <span className="text-xs font-medium uppercase tracking-widest">Image</span>
