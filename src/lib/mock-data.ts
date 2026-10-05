@@ -24,7 +24,7 @@ export const mockProjects: Project[] = [
     technologies: ['n8n', 'Supabase Vector', 'PostgreSQL', 'Gemini', 'Webhooks'],
     link: 'https://example.com',
     // repo_link: 'https://github.com/example/ecommerce',
-    image_url: 'https://qxsjywqoyqlxahgdnjup.supabase.co/storage/v1/object/public/alastier_portfolio/project_thumbnail/AI%20Agent.webp',
+    image_url: 'https://qxsjywqoyqlxahgdnjup.supabase.co/storage/v1/object/public/alastier_portfolio/project_thumbnail/intelligent_portfolio_ai_agent.webp',
     created_at: new Date().toISOString(),
   },
   {
@@ -33,7 +33,7 @@ export const mockProjects: Project[] = [
     description: 'An automated, set-and-forget marketing engine that dynamically sources trending topics daily, uses advanced LLMs to draft contextually relevant copy, generates AI imagery, and auto-publishes directly to social channels without human intervention.',
     technologies: ['n8n', 'Gemini', 'Facebook Graph API', 'Pollinations.ai', 'Reddit RSS'],
     link: 'https://www.facebook.com/profile.php?id=61562827262339',
-    image_url: 'https://qxsjywqoyqlxahgdnjup.supabase.co/storage/v1/object/public/alastier_portfolio/project_thumbnail/Content%20&%20Social%20Media.webp',
+    image_url: 'https://qxsjywqoyqlxahgdnjup.supabase.co/storage/v1/object/public/alastier_portfolio/project_thumbnail/ai_content_and_social_media_posting.webp',
     created_at: new Date().toISOString(),
   }
 ];
